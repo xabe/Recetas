@@ -164,20 +164,21 @@ nav .menu li a:hover {
 
 .card {
 	color: #7a7a7a;
-    height: 400px;
+    height: 350px;
     position: relative;
     width: 250px;
 	display: inline-block;
 }
 
-.card  .front, .card  .back {
+.card  .front, 
+.card  .back {
     height: inherit;
     left: 0;
     position: absolute;
     top: 0;
     width: inherit;
 	transform-style: preserve-3d;
-    transition: all 0.4s ease-in-out 0s;
+    transition: all 0.6s ease-in-out 0s;
 	background-color:white;
 	border-radius: 5px 5px 5px 5px;
 }
@@ -202,12 +203,14 @@ nav .menu li a:hover {
     z-index: 900;
 }
 
-.card .front .content{
+.card .front .content,
+.card .back .content{
 	padding: 10px;
     position: relative;
 }
 
-.card .front .content .header{
+.card .front .content .header,
+.card .back .content .header{
 	border: 1px solid #b9b4ac;
     border-radius: 5px 5px 0 0;
     height: 13px;
@@ -219,17 +222,19 @@ nav .menu li a:hover {
     font-weight: bold;
 }
 
-.card .front .content .header a{
+.card .front .content .header a,
+.card .back .content .header a{
 	text-decoration:none;
 }
 
-.card .front .content .imagen img{
+.card .front .content .imagen img,
+.card .back .content .imagen img{
 	height: 160px;
     vertical-align: top;
     width: 230px;
 }
 
-.card .front .content .autor_receta{
+.card .back .content .autor_receta{
 	font-size: 1.1em;
     font-weight: bold;
 	text-align: center;
@@ -237,9 +242,10 @@ nav .menu li a:hover {
     padding: 6px 0;
 }
 
+
 .card .front .content .informacion{
 	list-style-type: none;
-	margin: 0;
+	margin: 0.5em 0;
     padding: 0;
 }
 
@@ -282,7 +288,48 @@ nav .menu li a:hover {
     content: "\e603";
 }
 
-.card .front .footer{
+.card .back .reputacion{
+	border-bottom: 1px solid #b9b4ac;
+    height: 15px;
+    line-height: 15px;
+    padding: 6px 10px;
+}
+
+.card .back .reputacion > .etiqueta{
+	float:left;
+}
+
+.card .back .reputacion > .valor{
+	display: block;
+    text-align: right;
+}
+
+.card .back .reputacion >  .votos .down, 
+.card .back .reputacion >  .votos .up {
+    text-decoration: none;
+}
+.card .back .reputacion >  .votos .down:before,
+.card .back .reputacion >  .votos .up:before {
+    font-family: "iconitos";
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.card .back .reputacion > .votos .down {
+    color: #f00;
+}
+.card .back .reputacion > .votos .down:before {
+    content: "\e602";
+}
+.card .back .reputacion > .votos .up {
+    color: #008000;
+}
+.card .back .reputacion > .votos .up:before {
+    content: "\e603";
+}
+
+
+.card .front .footer,
+.card .back .footer{
 	bottom: 0.5em;
     display: block;
     left: 0;
@@ -293,7 +340,8 @@ nav .menu li a:hover {
     text-decoration: none;
 }
 
-.card .front .footer .card_giro{
+.card .front .footer .card_giro,
+.card .back .footer .card_giro{
 	cursor:pointer;
 }
 
