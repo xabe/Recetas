@@ -166,14 +166,15 @@ nav .menu li a:hover {
 	display: inline-block;
 }
 
-.card  .front, .card  .back {
+.card  .front, 
+.card  .back {
     height: inherit;
     left: 0;
     position: absolute;
     top: 0;
     width: inherit;
 	transform-style: preserve-3d;
-    transition: all 0.4s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
 	background-color:white;
 	border-radius: 5px 5px 5px 5px;
 }
@@ -278,7 +279,8 @@ nav .menu li a:hover {
     content: "\e603";
 }
 
-.card .front .footer{
+.card .front .footer,
+.card .back .footer{
 	bottom: 0.5em;
     display: block;
     left: 0;
@@ -289,7 +291,8 @@ nav .menu li a:hover {
     text-decoration: none;
 }
 
-.card .front .footer .card_giro{
+.card .front .footer .card_giro, 
+.card .back .footer .card_giro{
 	cursor:pointer;
 }
 
