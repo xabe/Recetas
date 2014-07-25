@@ -1,0 +1,22 @@
+{
+  "name": "menuLateral",
+  "version": "1.0.0",
+  "description": "Ejemplo de menu lateral movil",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xabe/MenuLateral.git"
+  },
+  "author": "Chabir Atrahouch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xabe/MenuLateral/issues"
+  },
+  "homepage": "https://github.com/xabe/MenuLateral",
+  "dependencies": {
+    "connect": "^3.1.0",
+    "serve-static": "^1.4.0"
+  }
+}
